@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'pages#home'
   get "about" => "pages#about"
   get "contact_us" => "pages#contact_us"
+  get "Logout" => "pages#logout"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
