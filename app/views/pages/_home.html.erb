@@ -1,13 +1,8 @@
 <div class="jumbotron center">
 	<h1>Welcome to my Pinteresting app</h1>
-	<% if user_signed_in? %>
-		I can't believe it's not Pinterest!
-	<% else %>
-
+	<p>I can't believe it's not Pinterest!</p>
 	<p>
 	  <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary" %>
 	  <%= link_to "Log in", new_user_session_path, class: "btn btn-default" %>
 	</p>
-
-	<% end %>
 </div>
